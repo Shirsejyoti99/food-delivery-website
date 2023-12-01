@@ -1,0 +1,225 @@
+/*CSS Style*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+}
+
+/* CSS variables */
+.root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+     align-items: center;
+    position:relative;
+    top: 0px;
+}
+
+/*#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+   
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}*/
+
+/* Navigation - logo and image */
+#logo {
+    margin: 14px 39px;
+}
+
+#logo img {
+    margin: 17px -6px;
+    height: 54px;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+/* Navigation - list items styling */
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 45px 30px;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 90px;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before {
+    content: "";
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.77;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    /*font-family:Bree Serif ,serif ;*/
+
+
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Our Services section */
+#our-services {
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    margin-top: 2px;
+    /* Adjust the margin as needed */
+}
+
+#our-services h1 {
+    font-size: 2.5rem;
+    padding: 30px;
+}
+
+/* Service section */
+#Services {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Services .box {
+    border: 2px solid brown;
+    margin: 30px 18px;
+    border-radius: 30px;
+    background-color: rgb(243, 218, 218);
+}
+
+#Services .box img {
+    height: 148px;
+    display: block;
+    margin: auto;
+    padding :8px;
+    border: 1px solid burlywood;
+    border-radius: 23px;
+}
+
+/*clients section */
+
+#client-section{
+    background: url('../img/logo.jpg')no-repeat center center/cover;
+    content: "";
+   
+    position: relative;
+    
+    height:100%
+    width: 100%;
+    z-index: -1;
+    opacity:0.90;
+
+}
+/*.client-section::before{
+    content: "";
+    background: url('../img/bg1.jpg');
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    opacity: 1;
+*/
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 145px;
+    border: 1px solid green;
+    border-radius: 30px;
+}
+.client-item{
+    padding: 25px;
+}
+/* Utility classes */
+.primary-center {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 25px;
+    margin-top:40px;
+
+}
+
+.secondary-container {
+    font-size: 2.4rem;
+    padding: 19px;
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 13px;
+    margin: 15px
+    background-color: rgb(214, 81, 81);
+    border: 2px solid white;
+    border-radius: 14px;
+    font-size: 0.97rem;
+    color: white;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
